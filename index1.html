@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+    --primary: #0f172a;
+    --accent: #22c55e;
+    --light: #f8fafc;
+    --text: #334155;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--light);
+}
+.cv {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.sidebar {
+    width: 30%;
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+}
+
+.sidebar h2 {
+    margin-top: 25px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-top: 8px;
+}
+
+.skills span {
+    display: inline-block;
+    background: var(--accent);
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 12px;
+}
+.content {
+    width: 70%;
+    padding: 35px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: var(--primary);
+}
+
+.header p {
+    color: var(--accent);
+    margin-top: 5px;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: var(--primary);
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.section p, .section li {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.project {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .cv {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <div class="sidebar">
+        <h2>Contact</h2>
+        <p>Email: shitifarhana@gmail.com</p>
+        <p>Phone: 01788393117</p>
+        <p>GitHub: github.com/FSambac</p>
+
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>C</span><span>C++</span><span>Java</span>
+            <span>Python</span><span>HTML</span><span>CSS</span>
+            <span>JavaScript</span><span>SQL</span>
+        </div>
+
+        <h2>Languages</h2>
+        <ul>
+            <li>English</li>
+            <li>Bangla</li>
+        </ul>
+
+        <h2>Interests</h2>
+        <ul>
+            <li>Competitive Programming</li>
+            <li>Open Source</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="header">
+            <h1>Farhana Akter</h1>
+            <p>CSE Student</p>
+        </div>
+
+        <div class="section">
+            <h2>Profile</h2>
+            <p>
+                Motivated CSE student with strong programming skills,
+                interested in software development and real-world problem solving.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>BSc in CSE</strong> (2024–2028)</p>
+            <p>Premier University, Chittagong</p>
+            <p>CGPA: 3.71</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <strong>Student Management System</strong>
+                <ul>
+                    <li>Full-stack web app with CRUD operations</li>
+                    <li>User authentication system</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <strong>Weather App</strong>
+                <ul>
+                    <li>Real-time weather API integration</li>
+                    <li>Responsive UI design</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>300+ problems solved</li>
+                <li>Top 10% in coding contest</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
